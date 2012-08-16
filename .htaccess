@@ -1,0 +1,40 @@
+## ################################################################## ##
+## APACHE CONFIGURATION FILE                                          ##
+##                                                                    ##
+## Based on the awesome .htaccess from Paul Irish (HTML5 Boilerplate) ##
+##                                                                    ##
+## @link html5boilerplate.com/                                        ##
+## @link camendesign.com/.htaccess                                    ##
+## @link perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/ ##
+## ################################################################## ##
+
+# Without -MultiViews, Apache will give a 404 for a rewrite if a folder
+# of the same name does not exist (e.g. /blog/hello).
+# -Indexes will have Apache block users from browsing folders without a
+# default document.
+# +FollowSymLinks will have Apache to follow softlinks within the file
+# system.
+#
+# @link webmasterworld.com/apache/3808792.htm
+Options -MultiViews -Indexes +FollowSymLinks
+
+# Use utf-8 encoding for anything served text/plain or text/html.
+AddDefaultCharset utf-8
+
+# Force simple error message for requests for non-existent favicon.ico.
+<Files favicon.ico>
+  ErrorDocument 404 "The requested file favicon.ico was not found."
+</Files>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Suppress access of index.htm (duplicated content).
+  RewriteCond %{REQUEST_URI} ^/index\.(html|htm|php)$ [NC]
+  RewriteRule ^ http://%{HTTP_HOST}/? [L,R=301]
+
+  # Suppress access of www. domain (duplicated content).
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http://%1%{REQUEST_URI}? [L,R=301]
+</IfModule>

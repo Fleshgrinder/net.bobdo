@@ -1,0 +1,57 @@
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body,#loading,#loading-progress-wrapper,#loading-progress,#table,.table-cell{width:100%;height:100%;min-height:800px}
+html,body{min-width:800px;margin:0;padding:0;background:#000;font:normal small/1.5 arial,verdana,sans-serif;color:#fff}
+abbr{cursor:help}
+a,a:visited,a:active{color:#666;text-decoration:none;outline:none!important}
+a:hover,a:focus{#000}
+#loading{width:50%;margin-left:50%;background:#000;position:relative;z-index:1002}
+#loading-bar{width:1px;height:0;margin:0;background:#fff;position:absolute;top:0;left:0;z-index:1003}
+#loading-progress-wrapper{display:table}
+#loading-progress{padding-left:10px;display:table-cell;vertical-align:middle;text-align:left}
+#table{display:table;position:absolute;top:0;bottom:0;left:0;z-index:1001}
+#table-row{display:table-row}
+.table-cell{width:50%;display:table-cell;vertical-align:middle;overflow:hidden}
+#black{padding-right:10px;background:#000}
+h1{width:100px;height:40px;margin:0;padding:0;float:right;color:transparent;position:relative;z-index:9999;background:right top no-repeat url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAYAAAAIeF9DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZJJREFUeNrsm41tgzAUhHGUARih2YARslFWyAakEzUbMEKyQbuB+yyZlEbm7/kgL+JOegqR0edzThgwpPDel1Jf/k9huyyMyIq/1Xw8dfLozFAgJvyt5cMFarJBZCQQE/7W8rErKFNiIAyEYiAMhGIgDIRiIAyEYiAMhGIgFANhIBQDYSAUA9lsIN77WqpJPLZsYtvH1E7CvkjeK/zN9KYfr89TPWKsjJ2reUv66wSrViavRgfSJl72hNHk8gz6SwaCGi9iwKkfMXewDx7K3xJhtIEgxosO5N/hlzsNdHmG/XUDgY239zUgpQ7x8wbk3Qz7Q3s87Ed2+JH6lLrG70epk1TfG3unjfHGmPP9DRxC31JV4mRYxba+ub8B8yz78+jxDgVyHrhUPCvmSPIm8Ibu1K/KNvIyeFw6eaO1rKOyjbwc3gInYfIyePs4n1WJrMKlWfhPxJzLtnY/8pQ8F1cdkTdyBXl63s45d5eNCwB2CSzy8niwxUDw4t2medjlY/IgPNwDFvKgvEUeuZI3nfcrwABVPH6euW1laQAAAABJRU5ErkJggg==')}
+#white{background:#fff;border-right:thin solid #000}
+nav{width:110px;height:320px;padding:100px 0 100px 10px;text-transform:uppercase;float:left;letter-spacing:1px}
+nav a,nav a:visited,nav a:active,nav a:hover,nav a:focus{height:40px;display:block;color:#000;text-decoration:none;font:normal x-small/40px arial,verdana,monospace;white-space:nowrap}
+nav a:after{content:' ▶'}
+.subnav{width:0;height:800px;padding-top:340px;display:none;overflow:hidden}
+#mainnav-copy{margin:-40px -120px 0 0;float:right;clear:right}
+#mainnav-copy a{color:#fff}
+#mainnav-copy a:after{content:' ▷'}
+.content{background:#fff;-moz-background-size:cover;-o-background-size:cover;-webkit-background-size:cover;background-size:cover;display:none;position:absolute;top:0;right:0;bottom:0;left:320px;z-index:0}
+.title,.subtitle{padding:1% 2%;background:#000;float:left;clear:left;line-height:1}
+.title{margin:10% 0 0 10%;font-size:360%;text-transform:uppercase}
+.title span{display:block;border-bottom:.2em solid #fff;position:relative;z-index:2}
+.subtitle{margin:-1.75% 0 0 10%;font-size:240%;text-transform:lowercase;position:relative;z-index:1}
+.description{width:40%;padding:1em 10% 1em 2em;background:#fff;border:thin solid #000;border-right:none;position:absolute;right:0;bottom:5%;color:#000}
+.description p:first-child{margin-top:0}
+.description p:last-child{margin-bottom:0}
+.description a,.description a:visited,.description a:active{margin-left:-.8em;padding:.4em .8em;color:#fff;background:#000;border:thin dotted transparent;text-decoration:none;white-space:nowrap;-o-transition:all .2s linear;-moz-transition:all .2s linear;-webkit-transition:all .2s linear;transition:all .2s linear}
+.description a:hover,.description a:focus{color:#000;background:transparent;border-color:#000}
+#about{padding:140px 0 0 10px;color:#000}
+#about-content{width:190px}
+#andrea-fussenegger{background-image:url('/img/andrea-fussenegger.jpg')}
+#clocks{background-image:url('/img/clocks.jpg')}
+#counter-strike{background-image:url('/img/counter-strike.jpg')}
+#dvd-forum-at{background-image:url('/img/dvd-forum-at.jpg')}
+#erotic-guide{background-image:url('/img/erotic-guide.jpg')}
+#fhboter{background-image:url('/img/fhboter.jpg')}
+#foobar2000{background-image:url('/img/foobar2000.jpg')}
+#georgiev-art{background-image:url('/img/georgiev-art.jpg')}
+#indiana-jones{background-image:url('/img/indiana-jones.jpg')}
+#movlib{background-image:url('/img/movlib.jpg')}
+#nervenhammer{background-image:url('/img/nervenhammer.jpg')}
+#omicron{background-image:url('/img/omicron.jpg')}
+#ortwin-oberhauser{background-image:url('/img/ortwin-oberhauser.jpg')}
+#richard-fussenegger{background-image:url('/img/richard-fussenegger.jpg')}
+#treemotion{background-image:url('/img/treemotion.jpg')}
+#verbundlinien{background-image:url('/img/verbundlinien.jpg')}
+#vivatier{background-image:url('/img/vivatier.jpg')}
+#webgl-rpg{background-image:url('/img/webgl-rpg.jpg')}
+#wikipedia{background-image:url('/img/wikipedia.jpg')}
+#bachelor-1{background-image:url('/img/bachelor-1.png')}
+#bachelor-2{background-image:url('/img/bachelor-2.png')}
+.hidden{display:none!important}

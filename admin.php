@@ -72,6 +72,9 @@ EOF;
           '<h3 class="subtitle">' . $subtitle . '</h3>' .
           '<div class="description">' . $description . '</div>' .
         '</article>';
+      $css .= '#' . $subid . '{background-image:url(/img/' . $subid . '.' . (
+        file_exists($IP . 'img/' . $subid . '.jpg') ? 'jpg' : 'png'
+      ) . ')}';
     }
     $subnav .= '</nav>';
   }

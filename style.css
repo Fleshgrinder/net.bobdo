@@ -33,25 +33,4 @@ nav a:after{content:' ▶'}
 .description a:hover,.description a:focus{color:#000;background:transparent;border-color:#000}
 #about{padding:140px 0 0 10px;color:#000}
 #about-content{width:190px}
-#andrea-fussenegger{background-image:url('/img/andrea-fussenegger.jpg')}
-#clocks{background-image:url('/img/clocks.jpg')}
-#counter-strike{background-image:url('/img/counter-strike.jpg')}
-#dvd-forum-at{background-image:url('/img/dvd-forum-at.jpg')}
-#erotic-guide{background-image:url('/img/erotic-guide.jpg')}
-#fhboter{background-image:url('/img/fhboter.jpg')}
-#foobar2000{background-image:url('/img/foobar2000.jpg')}
-#georgiev-art{background-image:url('/img/georgiev-art.jpg')}
-#indiana-jones{background-image:url('/img/indiana-jones.jpg')}
-#movlib{background-image:url('/img/movlib.jpg')}
-#nervenhammer{background-image:url('/img/nervenhammer.jpg')}
-#omicron{background-image:url('/img/omicron.jpg')}
-#ortwin-oberhauser{background-image:url('/img/ortwin-oberhauser.jpg')}
-#richard-fussenegger{background-image:url('/img/richard-fussenegger.jpg')}
-#treemotion{background-image:url('/img/treemotion.jpg')}
-#verbundlinien{background-image:url('/img/verbundlinien.jpg')}
-#vivatier{background-image:url('/img/vivatier.jpg')}
-#webgl-rpg{background-image:url('/img/webgl-rpg.jpg')}
-#wikipedia{background-image:url('/img/wikipedia.jpg')}
-#bachelor-1{background-image:url('/img/bachelor-1.png')}
-#bachelor-2{background-image:url('/img/bachelor-2.png')}
 .hidden{display:none!important}
